@@ -54,6 +54,7 @@ def get_preprocessing(name, is_training=False):
       'inception_resnet_v2': inception_preprocessing,
       'lenet': lenet_preprocessing,
       'mobilenet_v1': inception_preprocessing,
+      'mobilenet_v1q': inception_preprocessing,
       'mobilenet_v2': inception_preprocessing,
       'mobilenet_v2_035': inception_preprocessing,
       'mobilenet_v2_140': inception_preprocessing,
