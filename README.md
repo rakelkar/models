@@ -134,8 +134,6 @@ mkdir ~/train_logs/${MODEL_ITERATION}_pb
 python pb_viewer.py ~/model_output/${MODEL_ITERATION}/graph.pb ~/train_logs/${MODEL_ITERATION}_pb
 ```
 
-### Evaluating results
-
 # TensorFlow Models
 
 This repository contains a number of different models implemented in [TensorFlow](https://www.tensorflow.org):
