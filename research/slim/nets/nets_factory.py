@@ -1,4 +1,5 @@
 # Copyright 2017 The TensorFlow Authors. All Rights Reserved.
+# This file has been modified to add support for mobilenet_v1q
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

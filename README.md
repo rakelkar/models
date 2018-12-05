@@ -1,4 +1,5 @@
 # Quantization Friendly MobileNet_v1
+(This file has been modified from the source fork, for original content scroll to the end)
 
 This repository contains an implementation of a quantization friendly mobilenet_v1 model based on the reccomendations made in [A Quantization-Friendly Separable Convolution for MobileNets](https://arxiv.org/abs/1803.08607)
 
