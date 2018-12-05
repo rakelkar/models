@@ -6,7 +6,32 @@ This repository contains an implementation of a quantization friendly mobilenet_
 The repository is a fork of [Tensorflow Models](https://github.com/tensorflow/models). A modified Tensorflow Slim model [research/slim/nets/mobilenet_v1q](research/slim/nets/mobilenet_v1q.py) has been added. Per the paper this model relu for relu6 and omits batchwise and relu between depthwise and pointwise convolution layers.
 
 ## Results
-TBD
+The model was successfully trained and shows better performance when quantized to 8bit and executed on the Qualcomm Hexdragon DSP.
+
+### Evaluation results (non-quantized)
+Using eval_image_classifier.py to evaluate against the test set. 
+Both models were trained with a depth_multiplier=1.0 with 224x224 images
+For comparison see the 1.0 results on the [Google Blog introducing Mobile Nets](https://ai.googleblog.com/2017/06/mobilenets-open-source-models-for.html). 
+
+
+TLDR the ImageNet 224x224 1.0 v1 net is listed with a top-1 accuracy of 70.9.
+If you have better luck (or a better technique) for training this model, do share!
+The only technique used while training the imagenet model was to drop the learning_rate by 50% everytime losses started climbing.
+
+| Dataset       | Test Set   | Accuracy | Recall  | Link |
+| ------------- | ---------- | -------- | ------- | ---- |
+| ImageNet      | validation | 0.63272  | 0.84696 | TBD  |
+| Cifar10       | test       | 0.8873   | 0.996   | TBD  |
+
+### Quantization impact
+Quantized models running on the HexDragon DSP perform much better than just using the model downloaded from the google blog link. Results for a random [image of a shark](https://s.hswstatic.com/gif/sharks-1.jpg) 
+show the modified model holding its own even as the downloaded model blabbers out a sanbar.
+
+| Model                 | Label_image on CPU           | DSP (quantized)              |
+| --------------------- | ---------------------------- | ---------------------------- |
+| mobilenet_v1q         | 4:tiger shark, Galeocerdo cuvieri (score=0.79008) | 0.963346   4 4:tiger shark |
+| mobilenet_v1_0.50_224 | 4:tiger shark, Galeocerdo cuvieri (score=0.95253) | 0.151217 978 978:sandbar  |
+| mobilenet_v1_1.0_224  | 4:tiger shark, Galeocerdo cuvieri (score=0.70002) | TBD |
 
 ## Training
 ### Using an Azure GPU
