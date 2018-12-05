@@ -31,7 +31,7 @@ show the modified model holding its own even as the downloaded model blabbers ou
 | --------------------- | ---------------------------- | ---------------------------- |
 | mobilenet_v1q         | 4:tiger shark, Galeocerdo cuvieri (score=0.79008) | 0.963346   4 4:tiger shark |
 | mobilenet_v1_0.50_224 | 4:tiger shark, Galeocerdo cuvieri (score=0.95253) | 0.151217 978 978:sandbar  |
-| mobilenet_v1_1.0_224  | 4:tiger shark, Galeocerdo cuvieri (score=0.70002) | TBD |
+| mobilenet_v1_1.0_224  | 4:tiger shark, Galeocerdo cuvieri (score=0.70002) | 0.113479 905 905:window screen |
 
 ## Training
 ### Using an Azure GPU
