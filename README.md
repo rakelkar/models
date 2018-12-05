@@ -1,8 +1,8 @@
 # Quantization Friendly MobileNet_v1
 
-This repository contains a quantization friendly mobilenet_v1 model based on the reccomendations made in [A Quantization-Friendly Separable Convolution for MobileNets](https://arxiv.org/abs/1803.08607)
+This repository contains an implementation of a quantization friendly mobilenet_v1 model based on the reccomendations made in [A Quantization-Friendly Separable Convolution for MobileNets](https://arxiv.org/abs/1803.08607)
 
-The repository is a fork of [Tensorflow Models](https://github.com/tensorflow/models) and includes a modified Tensorflow Slim model [MobileNet_v1q](research/slim/nets/mobilenet_v1q.py). Per the paper this model relu for relu6 and omits batchwise and relu between depthwise and pointwise convolution layers.
+The repository is a fork of [Tensorflow Models](https://github.com/tensorflow/models). A modified Tensorflow Slim model [research/slim/nets/mobilenet_v1q](research/slim/nets/mobilenet_v1q.py) has been added. Per the paper this model relu for relu6 and omits batchwise and relu between depthwise and pointwise convolution layers.
 
 ## Results
 TBD
