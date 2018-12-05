@@ -18,8 +18,8 @@ TLDR the ImageNet 224x224 1.0 v1 net is listed with a top-1 accuracy of 70.9.
 If you have better luck (or a better technique) for training this model, do share!
 The only technique used while training the imagenet model was to drop the learning_rate by 50% everytime losses started climbing.
 
-| Dataset       | Test Set   | Accuracy | Recall  | Link |
-| ------------- | ---------- | -------- | ------- | ---- |
+| Dataset       | Test Set   | Accuracy | Recall  | Frozen PB |
+| ------------- | ---------- | -------- | ------- | --------- |
 | ImageNet      | validation | 0.63272  | 0.84696 | [tgz](model_output/imagenet_2_frozen.tgz)  |
 | Cifar10       | test       | 0.8873   | 0.996   | [tgz](model_output/cifar10_2_frozen.tgz)  |
 
