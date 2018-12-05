@@ -20,8 +20,8 @@ The only technique used while training the imagenet model was to drop the learni
 
 | Dataset       | Test Set   | Accuracy | Recall  | Link |
 | ------------- | ---------- | -------- | ------- | ---- |
-| ImageNet      | validation | 0.63272  | 0.84696 | TBD  |
-| Cifar10       | test       | 0.8873   | 0.996   | TBD  |
+| ImageNet      | validation | 0.63272  | 0.84696 | [tgz](model_output/imagenet_2_frozen.tgz)  |
+| Cifar10       | test       | 0.8873   | 0.996   | [tgz](model_output/cifar10_2_frozen.tgz)  |
 
 ### Quantization impact
 Quantized models running on the HexDragon DSP perform much better than just using the model downloaded from the google blog link. Results for a random [image of a shark](https://s.hswstatic.com/gif/sharks-1.jpg) 
