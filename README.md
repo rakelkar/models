@@ -15,9 +15,11 @@ I checked out an NC12 GPU from Azure. Steps I used to set it up are [here](https
 I trained the model on CIFAR10 and ImageNet data. For CIFAR10 the TF slim download script works like a charm, see instructions [here](research/slim/README.md). The instructions should also work for ImageNet data, though you do have to go to the ImageNet site to create an account before you can download. Also the download takes a bit.
 
 ### Local folder organization
+```
 ~/train_logs - for training logs, tensorboard points to this folder
 ~/model_output - to place frozen models
 ~/repos - somewhere to git clone repos
+```
 
 ### Running Training
 Uses instructions [here](research/slim)
