@@ -5,8 +5,9 @@ This repository contains an implementation of a quantization friendly mobilenet_
 
 The repository is a fork of [Tensorflow Models](https://github.com/tensorflow/models). A modified Tensorflow Slim model [research/slim/nets/mobilenet_v1q](research/slim/nets/mobilenet_v1q.py) has been added. Per the paper this model relu for relu6 and omits batchwise and relu between depthwise and pointwise convolution layers.
 
-![from https://arxiv.org/abs/1803.08607](images/quant_friendly.png)
-
+![](images/quant_friendly.png)
+---
+image from https://arxiv.org/abs/1803.08607
 
 ## Results
 The model was successfully trained and shows better performance when quantized to 8bit and executed on the Qualcomm Hexdragon DSP.
