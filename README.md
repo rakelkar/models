@@ -5,9 +5,7 @@ This repository contains an implementation of a quantization friendly mobilenet_
 
 The repository is a fork of [Tensorflow Models](https://github.com/tensorflow/models). A modified Tensorflow Slim model [research/slim/nets/mobilenet_v1q](research/slim/nets/mobilenet_v1q.py) has been added. Per the paper this model relu for relu6 and omits batchwise and relu between depthwise and pointwise convolution layers.
 
-![](images/quant_friendly.png | width=100)
-
-(from https://arxiv.org/abs/1803.08607)
+![from https://arxiv.org/abs/1803.08607](images/quant_friendly.png)
 
 
 ## Results
