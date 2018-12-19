@@ -24,7 +24,7 @@ The only technique used while training the imagenet model was to drop the learni
 
 | Dataset       | Test Set   | Accuracy | Recall  | Frozen PB |
 | ------------- | ---------- | -------- | ------- | --------- |
-| ImageNet      | validation | 0.63272  | 0.84696 | [tgz](model_output/imagenet_2_frozen.tgz)  |
+| ImageNet      | validation | 0.63272  | 0.84696 | [tgz](model_output/mobilenet_v1_1.0_224_frozen.tgz)  |
 | Cifar10       | test       | 0.8873   | 0.996   | [tgz](model_output/cifar10_2_frozen.tgz)  |
 
 ### Quantization impact
